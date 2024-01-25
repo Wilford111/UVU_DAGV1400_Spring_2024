@@ -41,10 +41,10 @@ public class School
         deweyPack.pens = 3;
         deweyPack.dirty = false;
 
-        jamesCoat.floof = 10.7f;
+        jamesCoat.fluff = 10.7f;
         jamesCoat.hood = false;
 
-        hillaryCoat.floof = 39.2f;
+        hillaryCoat.fluff = 39.2f;
         hillaryCoat.pockets += 2;
 
         Console.WriteLine("James has " + jamesPack.books + " books in his backpack.");
@@ -54,8 +54,8 @@ public class School
         Console.WriteLine("Dewey is weird." + " Let's not talk about him.");
 
         Console.WriteLine("");
-        Console.WriteLine("James has about " + jamesCoat.floof + " amount of floof in his coat.");
-        Console.WriteLine("Hillary has about " + hillaryCoat.floof + " amount of floof in her coat.");
+        Console.WriteLine("James has about " + jamesCoat.fluff + " amount of fluffiness in his coat.");
+        Console.WriteLine("Hillary has about " + hillaryCoat.fluff + " amount of fluffiness in her coat.");
         Console.WriteLine("Hillary has " + hillaryCoat.pockets + " pockets in her coat.");
     }    
 }
@@ -70,7 +70,7 @@ public class Backpack
 
 public class Coat
 {
-    public float floof;
+    public float fluff;
     public int pockets = 2;
     public bool hood = true;
 }
