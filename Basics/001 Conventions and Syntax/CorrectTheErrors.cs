@@ -9,3 +9,5 @@ public class CorrectTheErrors
         Console.WriteLine("HW");
 	}
 }
+
+//Errors have been corrected :)
