@@ -21,7 +21,7 @@ public class Program
 		Console.WriteLine(d);
 		Console.WriteLine(complaint);
 		
-		Console.WriteLine(""); //just using this to separate variables from operators.
+		Console.WriteLine(""); //just using this WriteLine function to separate variables from operators.
 		
 		//modifying these variables with operators:
 		Console.WriteLine(a + b); //you can modify these variables directly within a WriteLine command,
