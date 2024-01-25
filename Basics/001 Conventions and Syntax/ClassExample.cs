@@ -25,4 +25,10 @@ public class ClassWithFunctions
         Console.WriteLine(3 * 1);
         Console.WriteLine(7 - 1);
     }
+    public void MyFunction()
+    {
+        int x = 10;
+        int y = 20;
+        Console.WriteLine(x + y);
+    }
 }   
