@@ -45,7 +45,7 @@ public class School
         jamesCoat.hood = false;
 
         hillaryCoat.floof = 39.2f;
-        hillaryCoat.pockets = 4;
+        hillaryCoat.pockets += 2;
 
         Console.WriteLine("James has " + jamesPack.books + " books in his backpack.");
         Console.WriteLine("James has " + jamesPack.folders + " folders in his backpack.");
@@ -56,6 +56,7 @@ public class School
         Console.WriteLine("");
         Console.WriteLine("James has about " + jamesCoat.floof + " amount of floof in his coat.");
         Console.WriteLine("Hillary has about " + hillaryCoat.floof + " amount of floof in her coat.");
+        Console.WriteLine("Hillary has " + hillaryCoat.pockets + " pockets in her coat.");
     }    
 }
 
