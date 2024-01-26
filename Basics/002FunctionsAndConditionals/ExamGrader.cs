@@ -2,20 +2,20 @@ using System;
 
 public class Program
 {
+
     public void Main()
     {
-
-    }
-}
-
-public class Grade
-{
-    string gradeInput = Readline();
-    int gradeInt = Int32.parse(gradeInput)
-    public void GradeInputFn()
-    {
-        if(gradeInt > 90){
-            Console.WriteLine("You got an A. Congratulations! Keep up the good work.");
-        }
+        int gradeInt = Int32.Parse(Console.ReadLine());
+		
+		if(gradeInt >= 90){
+			Console.WriteLine("You got an A. Congratulations!");
+		} else if(gradeInt >= 80) {
+			Console.WriteLine("You got a B. Good work!");
+		} else if(gradeInt >= 70) {
+			Console.WriteLine("You got a C. You made it!");
+		} else if(gradeInt >= 60) {
+			Console.WriteLine("You got a D. There's some room for improvement!");
+		} else 
+			Console.WriteLine("You got an F. Please spend more time studying!");
     }
 }
