@@ -19,11 +19,11 @@ public class Program
 public class SwitchClass
 {
 	 public void SwitchFunction(int value1){
-        switch(value1 >= 10){
-            case(true):
+        switch(value1 >= 10){ //The determining factor is if the variable is greater than or equal to 10.
+            case(true): //If that is the case, print this line.
             	Console.WriteLine("Value1 is 10 or greater.");
             	break;
-			default:
+			default: //The only other outcome is that it is not the case.
 				Console.WriteLine("Value1 is less than 10.");
 				break;
         }

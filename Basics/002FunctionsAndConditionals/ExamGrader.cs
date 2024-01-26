@@ -5,7 +5,7 @@ public class Program
 
     public void Main()
     {
-        int gradeInt = Int32.Parse(Console.ReadLine());
+        int gradeInt = Int32.Parse(Console.ReadLine()); //Created an integer variable called gradeInt, which is equal to an integer-converted user input.
 		
 		if(gradeInt >= 90){
 			Console.WriteLine("You got an A. Congratulations!");
