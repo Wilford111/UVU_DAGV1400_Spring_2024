@@ -17,7 +17,7 @@ public class Program
 public class SwitchClass
 {
     public void SwitchFunction(int value1){
-        switch(value1>=10){
+        switch(value1 >= 10){
             case(true):
             	Console.WriteLine("Value1 is 10 or greater.");
             	break;
