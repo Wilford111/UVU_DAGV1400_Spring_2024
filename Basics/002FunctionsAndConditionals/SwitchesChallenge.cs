@@ -13,8 +13,14 @@ public class Program
 	{
 		userDecision = new OSControl();
 		
+        Console.WriteLine("I'm a Linux user.");
 		userDecision.userOS = OSControl.OS.Linux;
 		userDecision.CheckOS();
+
+        Console.WriteLine("");
+        Console.WriteLine("I'm a Windows user.");
+        userDecision.userOS = OSControl.OS.Windows;
+        userDecision.CheckOS();
 	}
 }
 
