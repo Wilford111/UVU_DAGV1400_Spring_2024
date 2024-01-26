@@ -20,21 +20,21 @@ public class Program
 		} else 
 			Console.WriteLine("You got an F. Please spend more time studying!");
 		
-		Console.WriteLine("");
+		Console.WriteLine(""); //Created a space in between the grade and class subject.
 		Console.WriteLine("Enter your class subject:");
 		
-		studentStudies = new ClassInSchool();
-		studentStudies.ClassSubject();
+		studentStudies = new ClassInSchool(); //starting the function from ClassInSchool.
+		studentStudies.ClassSubject(); //Running the function.
     }
 }
 
 public class ClassInSchool
 {
-	public string subjectChoice = Console.ReadLine();
+	public string subjectChoice = Console.ReadLine(); //Creating a variable from user input called subjectChoice
 	
 	public void ClassSubject()
 	{
-		switch(subjectChoice){
+		switch(subjectChoice){ //creating a case depending on what the user typed.
 			case "History":
 				Console.WriteLine("It's great to learn about everything that brought us to this moment!");
 				break;
