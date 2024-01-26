@@ -7,7 +7,7 @@ public class Program
 		Console.WriteLine("Please enter the current temperature in Celsius: ");
 		string tempInt = Console.ReadLine();
 		
-		int temp = Int32.Parse(tempInt);
+		float temp = float.Parse(tempInt);
 		
 		if(temp > 30){
 			Console.WriteLine("Please stay hydrated and avoid staying in the sun for too long!");
