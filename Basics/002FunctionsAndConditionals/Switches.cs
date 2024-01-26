@@ -11,12 +11,14 @@ public class Program
 
         switchClassVar.SwitchFunction(9);
 		switchClassVar.SwitchFunction(11);
+		
+		switchClassVar.FingerSwitch(3);
     }
 }
 
 public class SwitchClass
 {
-    public void SwitchFunction(int value1){
+	 public void SwitchFunction(int value1){
         switch(value1 >= 10){
             case(true):
             	Console.WriteLine("Value1 is 10 or greater.");
@@ -26,4 +28,24 @@ public class SwitchClass
 				break;
         }
     }
+
+	public void FingerSwitch(int fingers){
+	    switch (fingers){
+			case 1:
+				Console.WriteLine("point");
+				break;
+			case 2:
+				Console.WriteLine("peace");
+				break;
+			case 3:
+				Console.WriteLine("Oh baby a triple!");
+				break;
+			case 4:
+				Console.WriteLine("Quadruple legend");
+				break;
+			case 5:
+				Console.WriteLine("Goodbye!");
+				break;
+    	}
+	}
 }

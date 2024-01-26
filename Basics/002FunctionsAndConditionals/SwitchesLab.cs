@@ -7,6 +7,7 @@ public class Program
 	public void Main()
 	{
 		gameStates = new GameStates();
+		
 		gameStates.currentState = GameStates.States.Ending;
 		gameStates.CheckState();
 	}
