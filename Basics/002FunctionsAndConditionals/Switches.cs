@@ -41,7 +41,7 @@ public class SwitchClass
 				Console.WriteLine("Oh baby a triple!");
 				break;
 			case 4:
-				Console.WriteLine("Quadruple legend");
+				Console.WriteLine("Quadruple legend (FF14 reference)");
 				break;
 			case 5:
 				Console.WriteLine("Goodbye!");
