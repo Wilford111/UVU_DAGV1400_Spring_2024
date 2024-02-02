@@ -7,7 +7,7 @@ public class Program
 		int x = 10;
 		while(x > 0){
 			Console.WriteLine(x);
-			x --;
+			x--;
 		}
 	}
 }
