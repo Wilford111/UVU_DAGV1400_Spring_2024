@@ -12,21 +12,19 @@ public class Program
 		
 		Console.Write("A random number has been generated between 1 and 10! See if you can guess what it is... ");
 		int gNum = Int32.Parse(Console.ReadLine());
-		int attempts = 0;
+		int attempts = 1;
 		
 		while(gNum != rNum){
-			for(int att = 0; gNum != rNum; att++){
-				if(gNum > rNum){
-					Console.WriteLine("Too high! ");
-					gNum = Int32.Parse(Console.ReadLine());
-					attempts++;
-				}else if(gNum < rNum){
-					Console.WriteLine("Too Low! ");
-					gNum = Int32.Parse(Console.ReadLine());
-					attempts++;
-				}else{
-					break;
-				}
+			if(gNum > rNum){
+				Console.Write("Too high! ");
+				gNum = Int32.Parse(Console.ReadLine());
+				attempts++;
+			}else if(gNum < rNum){
+				Console.Write("Too Low! ");
+				gNum = Int32.Parse(Console.ReadLine());
+				attempts++;
+			}else{
+				break;
 			}
 		}
 		Console.WriteLine("Congrats, you guessed right! Attempts made: " + attempts);
