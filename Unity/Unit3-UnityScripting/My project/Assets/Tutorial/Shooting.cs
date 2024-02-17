@@ -7,6 +7,9 @@ public class Shooting : MonoBehaviour
     public Rigidbody bulletPrefab;
     public Transform firePosition;
     public float bulletSpeed;
+
+    public Inventory inventory;
+    
     void Awake()
     {
         inventory = GetComponent<Inventory>();

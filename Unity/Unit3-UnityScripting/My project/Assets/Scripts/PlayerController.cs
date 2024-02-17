@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
-    public float gravity = -120f;
+    public float gravity = 9.81f;
 
     private CharacterController controller;
     private Vector3 moveDirection;
@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-        moveDirection.y = gravity * Time.deltaTime;
+        moveDirection.y += Physics.gravity.y * Time.deltaTime;
+        //moveDirection.y += Physics.gravity.y * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
 
         if (controller.isGrounded && moveDirection.y < 0)
