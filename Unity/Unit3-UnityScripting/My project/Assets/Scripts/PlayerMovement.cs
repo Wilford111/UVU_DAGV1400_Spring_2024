@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed;
     public float jumpButtonGracePeriod;
 
+    [SerializeField]
+    private Transform cameraTransform;
+
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
@@ -30,7 +33,18 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector2.up) * movementDirection;
         movementDirection.Normalize();
+
+        //Sprint if shift is held down, return to normal speed if shift is let go.
+        if (Input.GetButtonDown("Fire3"))
+        {
+            speed *= 2.0f;
+        }
+        if (Input.GetButtonUp("Fire3"))
+        {
+            speed *= 0.5f;
+        }
 
         ySpeed += Physics.gravity.y * Time.deltaTime;
 
@@ -71,6 +85,18 @@ public class PlayerMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if(focus)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
