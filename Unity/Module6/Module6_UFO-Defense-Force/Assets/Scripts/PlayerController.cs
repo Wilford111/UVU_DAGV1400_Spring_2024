@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     private float horizontalInput;
     public float speed = 35;
-
+    private float score = 0;
     private float xRange = 21;
     public Transform blaster;
     public GameObject laserBolt;
+    public GameObject pickup;
 
     // Update is called once per frame
     void Update()
@@ -41,8 +42,13 @@ public class PlayerController : MonoBehaviour
     }
 
     //Delete any object with a trigger that hits the player
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        if(other.gameObject.CompareTag("Pickup"))
+        {
+            Destroy(other.gameObject);
+            score += 1;
+            Debug.Log("Score: " + score);
+        }
     }
 }
