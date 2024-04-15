@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickup: {fileID: 302269858635775675, guid: a3e3ef6dd8763ef458af530464e7a3a3, type: 3}
-  startDelay: 1
-  spawnTimer: 1
+  startDelay: 4
+  spawnTimer: 10
 --- !u!4 &210100801
 Transform:
   m_ObjectHideFlags: 0
