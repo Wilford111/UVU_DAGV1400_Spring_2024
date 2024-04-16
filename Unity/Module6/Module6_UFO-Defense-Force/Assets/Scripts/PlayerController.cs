@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     public float speed = 35;
     private float score = 0;
-    private float xRange = 21;
+    private float xRange = 25;
     public Transform blaster;
     public GameObject laserBolt;
     public GameObject pickup;

@@ -3,7 +3,10 @@ guid: 49478f6f3eeedbe4794c2facf63a2bf2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blaster: {instanceID: 0}
+  - laserBolt: {fileID: 4239547534566185034, guid: 9698506411e76284cb98026a0d1ff3f3, type: 3}
+  - pickup: {fileID: 302269858635775675, guid: a3e3ef6dd8763ef458af530464e7a3a3, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
