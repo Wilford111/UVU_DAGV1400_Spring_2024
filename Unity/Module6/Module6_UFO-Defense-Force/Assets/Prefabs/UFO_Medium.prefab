@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1660915967556962643}
   - component: {fileID: 5551622238447788708}
   - component: {fileID: -4671255564079815094}
-  - component: {fileID: 1780824232400009283}
   - component: {fileID: 7522688771010478583}
+  - component: {fileID: 1780824232400009283}
   m_Layer: 0
   m_Name: UFO_Medium
   m_TagString: Untagged
@@ -136,6 +136,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 40
   lowerBounds: -20
+--- !u!114 &7522688771010478583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620513016715096502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b7d14b22a1481459fd4a1ba965f94c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 75
 --- !u!54 &1780824232400009283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -163,15 +177,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7522688771010478583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8620513016715096502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5b7d14b22a1481459fd4a1ba965f94c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
