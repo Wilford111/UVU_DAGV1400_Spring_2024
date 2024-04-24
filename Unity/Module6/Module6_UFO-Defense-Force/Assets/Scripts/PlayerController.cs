@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip pickupSound;
     private float horizontalInput;
     public float speed = 35;
     private float score = 0;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //Reference GameManager script on GameManager object
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,8 +56,9 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.CompareTag("Pickup"))
         {
             Destroy(other.gameObject);
+            audioSource.PlayOneShot(pickupSound, 1.0f);
             score += 1;
-            Debug.Log("Score: " + score);
+            Debug.Log("Pickups: " + score);
         }
     }
 }

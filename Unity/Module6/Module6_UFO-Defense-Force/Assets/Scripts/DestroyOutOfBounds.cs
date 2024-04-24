@@ -12,6 +12,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -20,12 +21,14 @@ public class DestroyOutOfBounds : MonoBehaviour
         if(transform.position.z > topBounds)
         {
             Destroy(gameObject);
+
         }
         else if(transform.position.z < lowerBounds)
         {
             Debug.Log("Game Over!");
             Destroy(gameObject);
             gameManager.isGameOver = true;
+
         }
     }
 }

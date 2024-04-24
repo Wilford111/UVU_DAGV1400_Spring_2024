@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public bool isGameOver;
     private GameObject gameOverText;
+    private AudioSource audioSource;
+    public AudioClip gameStart;
     
     void Awake()
     {
@@ -18,6 +20,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOverText = GameObject.Find("GameOverText");
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(gameStart, 1.0f);
     }
 
     // Update is called once per frame
