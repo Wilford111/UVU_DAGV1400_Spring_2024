@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] enemies;
     public GameObject powerup;
 
-    private float zEnemySpawn = 8.0f;
+    private float zEnemySpawn = 16.0f;
     private float xSpawnRange = 11.0f;
     private float zPowerupRange = 4.0f;
 
